@@ -23,7 +23,7 @@ appConfig.getConnection = function(){
 
 appConfig.initDb = function() {
 
-		var data = fs.readFileSync('./conf/conf.xml', 'utf8');
+		var data = fs.readFileSync(__dirname+'conf/conf.xml', 'utf8');
 		//var data = fs.readFileSync('./config/config.xml', 'utf8'); //change
 		    data = xmlParse(data);
 			data = data.root.children;	
